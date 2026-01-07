@@ -8,7 +8,7 @@ namespace BusTicketingSystem
         {
             // Initial Commit Version
             Console.WriteLine("========================================");
-            Console.WriteLine("             BUS TICKETING              ");
+            Console.WriteLine("           BUS TICKETING v1.1           ");
             Console.WriteLine("========================================");
 
             Console.WriteLine("Destinations:");
