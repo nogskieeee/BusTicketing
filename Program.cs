@@ -46,7 +46,18 @@ namespace BusTicketingSystem
             int passengers = Convert.ToInt32(Console.ReadLine());
 
             // --- CALCULATION BLOCK ---
+            // Discount Logic
+            Console.Write("Apply Senior/Student Discount? (y/n): ");
+            string discount = Console.ReadLine();
+
             double totalCost = price * passengers;
+
+            if (discount.ToLower() == "y")
+            {
+                double discountAmount = totalCost * 0.20; // 20% off
+                totalCost = totalCost - discountAmount;
+                Console.WriteLine(">> 20% Discount Applied.");
+            }
             // -------------------------
 
             Console.WriteLine("\n------------- RECEIPT -------------");
